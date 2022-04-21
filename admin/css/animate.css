@@ -1,0 +1,372 @@
+.menuOut {
+    animation-name: menuOut;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menuOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-300px);
+        display: none;
+    }
+}
+
+.showIn {
+    animation-name: showIn;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showIn {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+        display: block;
+    }
+}
+
+.showInUp {
+    animation-name: showInUp;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes showInUp {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.showInDown {
+    animation-name: showInDown;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes showInDown {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.showInLeft {
+    animation-name: showInLeft;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes showInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.showInRight {
+    animation-name: showInRight;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes showInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    animation-duration: 1500ms;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hideOut {
+    animation-name: hideOut;
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
+}
+
+@keyframes hideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.mask-up {
+    overflow: hidden !important;
+    animation-name: mashUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes mashUp {
+    from {
+        height: 500px;
+        opacity: 1;
+    }
+
+    to {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+
+.mask-down {
+    overflow: hidden !important;
+    animation-name: maskDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes maskDown {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.maskIn {
+    transform: translateX(120%);
+    animation-name: maskIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes maskIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.maskOut {
+    transform: translateX(120%);
+    animation-name: maskOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes maskOut {
+    from {
+        transform: translateX(0);
+        opacity: 1
+    }
+
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.scrollDown {
+    animation-name: scrollDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes scrollDown {
+    from {
+        transform: translateY(100%);
+        opacity: 0
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+.clickHideOut {
+    animation-name: clickHideOut;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes clickHideOut {
+    from {
+        right: 0;
+        opacity: 1
+    }
+
+    to {
+        left: 0;
+        opacity: 0
+    }
+}
+
+.clickShowOut {
+    animation-name: clickShowOut;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes clickShowOut {
+    from {
+        right: 0;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.clickShowIn {
+    animation-name: clickShowIn;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes clickShowIn {
+    from {
+        left: 0;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.clickHideIn {
+    animation-name: clickHideIn;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes clickHideIn {
+    from {
+        left: 0;
+        opacity: 1
+    }
+
+    to {
+        right: 0;
+        opacity: 0
+    }
+}
